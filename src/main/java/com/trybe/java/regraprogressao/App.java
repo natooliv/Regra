@@ -59,9 +59,12 @@ public class App {
     System.out.printf("A média ponderada do estudante é: %.2f%%\n", mediaPonderada);
 
     if (mediaPonderada >= 85) {
-      System.out.printf("Parabéns! Você alcançou %.2f%%! E temos o prazer de informar que você obteve aprovação!\n", mediaPonderada);
+      System.out.printf("Parabéns! Você alcançou %.2f%%! E temos o prazer de"+
+              "informar que você obteve aprovação!\n", mediaPonderada);
     } else {
-      System.out.printf("Lamentamos informar que, com base na sua pontuação alcançada neste período, %.2f%%, você não atingiu a pontuação mínima necessária para sua aprovação.\n", mediaPonderada);
+      System.out.printf("Lamentamos informar que, com base na sua pontuação"+
+              "alcançada neste período, %.2f%%, você não atingiu a pontuação"+
+              "mínima necessária para sua aprovação.\n", mediaPonderada);
     }
   }
 }
