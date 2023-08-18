@@ -57,11 +57,12 @@ public class App {
     }
 
     String resultadoFinal = mediaPonderada >= 85
-            ? "Parabéns! Você alcançou " + String.format("%.2f", mediaPonderada)
-            + "%! E temos o prazer de informar que você obteve aprovação!"
-            : "Lamentamos informar que, com base na sua pontuação alcançada neste período, "
-            + String.format("%.2f", mediaPonderada)
-            + "%, você não atingiu a pontuação mínima necessária para sua aprovação.";
-
+            ? "Parabéns! Você alcançou " + mediaPonderada
+            + "%! E temos o prazer de informar "
+            + "que você obteve aprovação!"
+            : "Lamentamos informar que, com base na sua pontuação alcançada " + "neste período, "
+            + mediaPonderada + "%, você não atingiu a pontuação mínima "
+            + "necessária para sua aprovação.";
+    System.out.println(resultadoFinal);
   }
 }
